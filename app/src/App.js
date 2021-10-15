@@ -168,23 +168,32 @@ export default function App() {
         </div>
 
         <div className="bio">
-          This is Charles! I order you to wave at me!!!
+          This is Charles!
+        </div>
+        <div className="bio">
+          Send any message down below to confirm your participation! There is a 0.1% chance that you can win 1 fake ether on the rinkeby testnet &#128064;
+        </div>
+        <div className="bio">
+          Make sure you have connected your wallet first :D
         </div>
 
-        <textarea name="input" id="textinput" cols="10" rows="10" placeholder="Send some cool shit!" className="coolstuff" onChange={changeInput}></textarea>
+
+        <textarea name="input" id="textinput" cols="10" rows="10" placeholder="Send some cool shit!" className="coolstuff" onChange={changeInput}>{inputText}</textarea>
 
         <button className="waveButton" onClick={wave}>
           <h1>&#8594;</h1>
         </button>
 
+        <h4 className="entries">Entries!</h4>
         
 
       {allWaves.map((wave, index) => {
           return (
-            <div className = "card" key={index} style={{ backgroundColor: "OldLace", marginTop: "16px", padding: "8px" }}>
-              <div>Address: {wave.address}</div>
-              <div className="time">Time: {wave.timestamp.toString()}</div>
-              <div>Message: {wave.message}</div>
+            <div className = "card" key={index} >
+              <div class="details">
+              <div className="address">Address: {wave.address}</div>
+              <div className="time">Time: {wave.timestamp.toString()}</div></div>
+              <div className="message"><p>{wave.message}</p></div>
             </div>)
         })}
       </div>

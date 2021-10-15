@@ -45,8 +45,44 @@ body {
   text-align: center;
   color: #45A29E;
   margin-top: 16px;
+  width: 50%;
+  align-self: center;
+  
 }
 
+.card {
+  background-color: #0b0c10;
+  color: #45A29E;
+  padding : 8px;
+  border: 2px solid#45A29E;
+  margin-bottom: 5%;
+  height: 20%;
+  border-radius: 5px;
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.address {
+  width: 50%;
+  height: 20%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.time {
+  width: 40%;
+  
+}
+.message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  color: #66FCF1;
+  font-weight: 800;
+}
 .waveButton {
   cursor: pointer;
   margin-top: 16px;
@@ -77,13 +113,21 @@ h1 {
 .logo{
   color: #66FCF1;
   font-family: 'Rock Salt', cursive;
-    font-size: xx-large;
+    font-size: 2rem;
     margin-left: 3%;
     margin-top: 1%;
 }
 h4{
   margin-top: 0;
   margin-bottom: 0;
+}
+
+.entries {
+  color: #66FCF1;
+  font-family: 'Rock Salt', cursive;
+    font-size: xx-large;
+    margin-bottom: 5%;
+    align-self: center;
 }
 .connectButton {
   cursor: pointer;
@@ -105,15 +149,6 @@ h4{
 a {
   text-decoration: none;
   color: inherit;
-}
-
-.card {
-  height: 20%;
-
-}
-
-.time {
-  float: right;
-}
+} 
 
 
